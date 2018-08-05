@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>jenkins中对was的部署支持 · fartpig‘s blog </title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="jenkins版本：  2.32.1  "/><meta name="docsearch:language" content="en"/><meta property="og:title" content="jenkins中对was的部署支持 · fartpig‘s blog "/><meta property="og:type" content="website"/><meta property="og:url" content="https://t3573393.github.io/fartpig.github.io/blog/2017/07/21/blog-02.html"/><meta property="og:description" content="jenkins版本：  2.32.1  "/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/fartpig.github.io/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://t3573393.github.io/fartpig.github.io/blog/atom.xml" title="fartpig‘s blog  Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://t3573393.github.io/fartpig.github.io/blog/feed.xml" title="fartpig‘s blog  Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/fartpig.github.io/css/main.css"/></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/fartpig.github.io/"><img class="logo" src="/fartpig.github.io/img/fartpig.jpeg" alt="fartpig‘s blog "/><h2 class="headerTitleWithLogo">fartpig‘s blog </h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/fartpig.github.io/blog" target="_self">博客</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Recent Posts</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul><li class="navListItem"><a class="navItem" href="/fartpig.github.io/blog/2018/03/03/blog-01.html">windows中wampserver增加https支持</a></li><li class="navListItem"><a class="navItem" href="/fartpig.github.io/blog/2017/11/30/blog-01.html">maven重命名war插件下的jar名称</a></li><li class="navListItem"><a class="navItem" href="/fartpig.github.io/blog/2017/11/21/blog-02.html">ant使用JDT 编译多种编码文件方案</a></li><li class="navListItem"><a class="navItem" href="/fartpig.github.io/blog/2017/11/21/blog-01.html">maven使用jdt编译器，并使用prefs文件进行描述</a></li><li class="navListItem"><a class="navItem" href="/fartpig.github.io/blog/2017/11/16/blog-01.html">maven使用antrun运行不同版本的插件</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/fartpig.github.io/blog/2017/07/21/blog-02.html">jenkins中对was的部署支持</a></h1><p class="post-meta">July 21, 2017</p><div class="authorBlock"><p class="post-authorName"><a target="_blank" rel="noreferrer noopener">fartpig</a></p></div></header><div><span><p>jenkins版本：  2.32.1<br>
+websphere 版本： 8.5<br>
+使用jenkins插件市场中的  websphere deploy plugin  1.3.4</p>
+<!--truncate-->  
+步骤如下：
+<ol>
+<li>复制was中必要的支持客户端sop包到插件目录下：
+was中路径：
+$WAS_INSTALL/runtime 包括两个jar:  com.ibm.ws.admin.client_<em>.jar, com.ibm.ws.orb_</em>.jar
+目标路径为： $USER_HOME/.jenkins/plugins/websphere-deployer/WEB_INF/lib</li>
+<li>将目标机器中密钥证书拷贝到jenkins服务器上， 具体文件为： DummyClientKeyFile.jks, DummyClientTrustFile.jks 两个文件，默认密码为 WebAS
+原始服务器中如果没有需要自己导出，官方有介绍，这里简单说一下(在web 控制台中 密钥库和证书 &gt; CellDefaultKeyStore &gt; 个人证书 &gt; 管理个人证书， 导出证书之后需要使用IBM 的 keytools进行打入到 jsk中， 具体导入到处命令格式为</li>
+</ol>
+<pre><code class="hljs css languages- shell">keytool -exportcert -alias [host]-1 -keystore *** -storepass changeit -file [hsot].cer
+
+keytool -importcert -alias [host] -keystore [path to system keystore] -storepass changeit -file [host].cer
+</code></pre>
+<ol start="3">
+<li>按照官方的说明填写对应的jsk和密码， 并且补充上部署的目标(节点 集群)， 注意一定要填写好 超时时间 这个选项(插件bug)</li>
+<li>在jenkins的服务器上修改 /etc/hosts 将目标was上的机器名称(可以在 was的控制台中查看)和ip映射上 [注： 这里是了能够在jsk中的域名和地址对应，从而将文件上传到目标，如果内网有对应的DNS配置可以很简单的解决这步]</li>
+</ol>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/fartpig.github.io/blog">Recent Posts</a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/fartpig.github.io/" class="nav-home"><img src="/fartpig.github.io/img/fartpig.jpeg" alt="fartpig‘s blog " width="66" height="58"/></a><div><h5>Docs</h5><a href="/fartpig.github.io/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/fartpig.github.io/docs/en/doc2.html">Guides (or other categories)</a><a href="/fartpig.github.io/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/fartpig.github.io/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank">Twitter</a></div><div><h5>More</h5><a href="/fartpig.github.io/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/facebook/test-site" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" class="fbOpenSource"><img src="/fartpig.github.io/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Facebook Inc.</section></footer></div></body></html>
