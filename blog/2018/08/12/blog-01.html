@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>itchat4j中的功能扩展 · fartpig‘s blog </title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="itchat4j是一个基于java语言的微信机器人库，里面支持了对文字、语音、图片等信息的接收和回复，是对[itchat库](https://github.com/littlecodersh/ItChat)的翻写。不过在使用的过程中对web支持不理想，本人基于原来的版本进行了相应的改造，见 [github itchat4j](https://github.com/t3573393/itchat4j)  "/><meta name="docsearch:language" content="en"/><meta property="og:title" content="itchat4j中的功能扩展 · fartpig‘s blog "/><meta property="og:type" content="website"/><meta property="og:url" content="https://t3573393.github.io/fartpig.github.io/blog/2018/08/12/blog-01.html"/><meta property="og:description" content="itchat4j是一个基于java语言的微信机器人库，里面支持了对文字、语音、图片等信息的接收和回复，是对[itchat库](https://github.com/littlecodersh/ItChat)的翻写。不过在使用的过程中对web支持不理想，本人基于原来的版本进行了相应的改造，见 [github itchat4j](https://github.com/t3573393/itchat4j)  "/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/fartpig.github.io/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://t3573393.github.io/fartpig.github.io/blog/atom.xml" title="fartpig‘s blog  Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://t3573393.github.io/fartpig.github.io/blog/feed.xml" title="fartpig‘s blog  Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/fartpig.github.io/css/main.css"/></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/fartpig.github.io/"><img class="logo" src="/fartpig.github.io/img/fartpig.jpeg" alt="fartpig‘s blog "/><h2 class="headerTitleWithLogo">fartpig‘s blog </h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/fartpig.github.io/blog" target="_self">博客</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Recent Posts</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul><li class="navListItem navListItemActive"><a class="navItem" href="/fartpig.github.io/blog/2018/08/12/blog-01.html">itchat4j中的功能扩展</a></li><li class="navListItem"><a class="navItem" href="/fartpig.github.io/blog/2018/03/03/blog-01.html">windows中wampserver增加https支持</a></li><li class="navListItem"><a class="navItem" href="/fartpig.github.io/blog/2017/11/30/blog-01.html">maven重命名war插件下的jar名称</a></li><li class="navListItem"><a class="navItem" href="/fartpig.github.io/blog/2017/11/21/blog-02.html">ant使用JDT 编译多种编码文件方案</a></li><li class="navListItem"><a class="navItem" href="/fartpig.github.io/blog/2017/11/21/blog-01.html">maven使用jdt编译器，并使用prefs文件进行描述</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/fartpig.github.io/blog/2018/08/12/blog-01.html">itchat4j中的功能扩展</a></h1><p class="post-meta">August 12, 2018</p><div class="authorBlock"><p class="post-authorName"><a target="_blank" rel="noreferrer noopener">fartpig</a></p></div></header><div><span><p>itchat4j是一个基于java语言的微信机器人库，里面支持了对文字、语音、图片等信息的接收和回复，是对<a href="https://github.com/littlecodersh/ItChat">itchat库</a>的翻写。不过在使用的过程中对web支持不理想，本人基于原来的版本进行了相应的改造，见 <a href="https://github.com/t3573393/itchat4j">github itchat4j</a></p>
+<!--truncate-->
+修改的内容包括：   
+1. 增强了web的登陆图片输出功能
+2. 提供异步登陆功能
+3. 提供线程池对所有线程的管理
+4. 增加了状态中心，对登陆事件进行监听的接口
+5. 添加调试日志方便查看网络交互信息
+6. 修改线程退出机制，采用应用开关的方式
+7. 调整异常处理，关闭虚拟机停止的操作  
+<p>在web程序中需要使用图片输出到页面，需要将二进制内容输出到outputstream中，因此对Wechat构造函数进行改造。</p>
+<pre><code class="hljs css languages- java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Wechat</span><span class="hljs-params">(IMsgHandlerFace msgHandler, OutputStream out)</span> </span>{
+  <span class="hljs-keyword">this</span>(msgHandler, out, <span class="hljs-keyword">false</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Wechat</span><span class="hljs-params">(IMsgHandlerFace msgHandler, OutputStream out, <span class="hljs-keyword">boolean</span> isAync)</span> </span>{
+  System.setProperty(<span class="hljs-string">"jsse.enableSNIExtension"</span>, <span class="hljs-string">"false"</span>); <span class="hljs-comment">// 防止SSL错误</span>
+  <span class="hljs-keyword">this</span>.msgHandler = msgHandler;
+
+  <span class="hljs-comment">// 登陆</span>
+  LoginController login = <span class="hljs-keyword">new</span> LoginController();
+  <span class="hljs-keyword">if</span> (isAync) {
+    login.loginAsync(out);
+  } <span class="hljs-keyword">else</span> {
+    login.login(out);
+  }
+
+}
+</code></pre>
+<p>同时为了支持输出图片之后的异步返回，需要独立启动一个线程进行检测登录结果，并在客户端扫码登录后完成一系列的初始化和监听消息接口的调度。</p>
+<pre><code class="hljs css languages- java"><span class="hljs-comment">// 获取登陆验证码后直接返回</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">loginAsync</span><span class="hljs-params">(OutputStream out)</span> </span>{
+        <span class="hljs-keyword">boolean</span> isSuccess = <span class="hljs-keyword">false</span>;
+        <span class="hljs-keyword">if</span> (core.isAlive()) { <span class="hljs-comment">// 已登陆</span>
+            LOG.info(<span class="hljs-string">"itchat4j已登陆"</span>);
+            <span class="hljs-keyword">return</span>;
+        }
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> count = <span class="hljs-number">0</span>; count &lt; <span class="hljs-number">10</span>; count++) {
+            LOG.info(<span class="hljs-string">"获取UUID"</span>);
+            <span class="hljs-keyword">while</span> (loginService.getUuid() == <span class="hljs-keyword">null</span>) {
+                LOG.info(<span class="hljs-string">"1. 获取微信UUID"</span>);
+                <span class="hljs-keyword">while</span> (loginService.getUuid() == <span class="hljs-keyword">null</span>) {
+                    LOG.warn(<span class="hljs-string">"1.1. 获取微信UUID失败，两秒后重新获取"</span>);
+                    SleepUtils.sleep(<span class="hljs-number">2000</span>);
+                }
+            }
+            LOG.info(<span class="hljs-string">"2. 获取登陆二维码图片"</span>);
+            <span class="hljs-keyword">if</span> (loginService.getQR(out)) {
+                isSuccess = <span class="hljs-keyword">true</span>;
+                <span class="hljs-keyword">break</span>;
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (count == <span class="hljs-number">10</span>) {
+                LOG.error(<span class="hljs-string">"2.2. 获取登陆二维码图片失败，系统退出"</span>);
+                <span class="hljs-comment">// System.exit(0);</span>
+                StatusCenter.sysException();
+                <span class="hljs-keyword">return</span>;
+            }
+        }
+
+        <span class="hljs-keyword">if</span> (isSuccess) {
+            Wechat.getExecutor().execute(<span class="hljs-keyword">new</span> Runnable() {
+                <span class="hljs-meta">@Override</span>
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+                    <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+                        LOG.info(<span class="hljs-string">"3. 请扫描二维码图片，并在手机上确认"</span>);
+                        <span class="hljs-keyword">if</span> (!core.isAlive()) {
+                            loginService.login();
+                            core.setAlive(<span class="hljs-keyword">true</span>);
+                            LOG.info((<span class="hljs-string">"登陆成功"</span>));
+                            StatusCenter.login();
+                            afterLogin();
+                            <span class="hljs-keyword">break</span>;
+                        }
+                        LOG.info(<span class="hljs-string">"4. 登陆超时，请重新扫描二维码图片"</span>);
+                    }
+                }
+            });
+        }
+    }
+</code></pre>
+<p>为了避免线程出现失控，或者是出现僵尸线程，需要有对应线程池进行控制，所有的线程调度派发都使用线程池的入口，并设定线程池的注入接口，方便接入外围容器的配置管理。</p>
+<pre><code class="hljs css languages- java">
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">volatile</span> Executor executor;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Executor <span class="hljs-title">getExecutor</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">if</span> (executor == <span class="hljs-keyword">null</span>) {
+      <span class="hljs-keyword">synchronized</span> (Wechat.class) {
+        <span class="hljs-keyword">if</span> (executor == <span class="hljs-keyword">null</span>) {
+          executor = Executors.newCachedThreadPool();
+        }
+      }
+    }
+    <span class="hljs-keyword">return</span> executor;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setExecutor</span><span class="hljs-params">(Executor executor)</span> </span>{
+    Wechat.executor = executor;
+  }
+
+</code></pre>
+<p>为了正确处理当前的登陆或异常状态，添加状态中心，方便代码对特殊异常状态进行处理。其中的状态包括登出，登陆和系统异常。</p>
+<pre><code class="hljs css languages- java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">IStatusHandlerFace</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">loginHandle</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">logoutHandle</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sysExceptionHandle</span><span class="hljs-params">()</span></span>;
+
+}
+
+</code></pre>
+<p>其他的一些改动这边就不一一列举了，主要是调整日志模式、添加开关进行监听和处理线程正常退出以及修复致命的作为一个类库不能杀掉运行时的问题。</p>
+<p>相关改动可以查看对应的代码。</p>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/fartpig.github.io/blog">Recent Posts</a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/fartpig.github.io/" class="nav-home"><img src="/fartpig.github.io/img/fartpig.jpeg" alt="fartpig‘s blog " width="66" height="58"/></a><div><h5>Docs</h5><a href="/fartpig.github.io/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/fartpig.github.io/docs/en/doc2.html">Guides (or other categories)</a><a href="/fartpig.github.io/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/fartpig.github.io/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank">Twitter</a></div><div><h5>More</h5><a href="/fartpig.github.io/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/facebook/test-site" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" class="fbOpenSource"><img src="/fartpig.github.io/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Facebook Inc.</section></footer></div></body></html>

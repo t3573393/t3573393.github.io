@@ -4,7 +4,7 @@
         <title>fartpig‘s blog  Blog</title>
         <link>https://t3573393.github.io/fartpig.github.io/blog</link>
         <description>The best place to stay up-to-date with the latest fartpig‘s blog  news and events.</description>
-        <lastBuildDate>Sat, 03 Mar 2018 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 Aug 2018 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,14 @@
             <link>https://t3573393.github.io/fartpig.github.io/blog</link>
         </image>
         <copyright>Copyright © 2018 fartpig </copyright>
+        <item>
+            <title><![CDATA[itchat4j中的功能扩展]]></title>
+            <link>https://t3573393.github.io/fartpig.github.io/blog/2018/08/12/blog-01.html</link>
+            <guid>https://t3573393.github.io/fartpig.github.io/blog/2018/08/12/blog-01.html</guid>
+            <pubDate>Sun, 12 Aug 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>itchat4j是一个基于java语言的微信机器人库，里面支持了对文字、语音、图片等信息的接收和回复，是对<a href="https://github.com/littlecodersh/ItChat">itchat库</a>的翻写。不过在使用的过程中对web支持不理想，本人基于原来的版本进行了相应的改造，见 <a href="https://github.com/t3573393/itchat4j">github itchat4j</a></p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[windows中wampserver增加https支持]]></title>
             <link>https://t3573393.github.io/fartpig.github.io/blog/2018/03/03/blog-01.html</link>

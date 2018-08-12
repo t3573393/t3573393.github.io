@@ -2,12 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://t3573393.github.io/fartpig.github.io/blog</id>
     <title>fartpig‘s blog  Blog</title>
-    <updated>2018-03-03T06:00:00Z</updated>
+    <updated>2018-08-12T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://t3573393.github.io/fartpig.github.io/blog"/>
     <subtitle>The best place to stay up-to-date with the latest fartpig‘s blog  news and events.</subtitle>
     <logo>https://t3573393.github.io/fartpig.github.io/img/fartpig.jpeg</logo>
     <rights>Copyright © 2018 fartpig </rights>
+    <entry>
+        <title type="html"><![CDATA[itchat4j中的功能扩展]]></title>
+        <id>https://t3573393.github.io/fartpig.github.io/blog/2018/08/12/blog-01.html</id>
+        <link href="https://t3573393.github.io/fartpig.github.io/blog/2018/08/12/blog-01.html">
+        </link>
+        <updated>2018-08-12T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>itchat4j是一个基于java语言的微信机器人库，里面支持了对文字、语音、图片等信息的接收和回复，是对<a href="https://github.com/littlecodersh/ItChat">itchat库</a>的翻写。不过在使用的过程中对web支持不理想，本人基于原来的版本进行了相应的改造，见 <a href="https://github.com/t3573393/itchat4j">github itchat4j</a></p>
+]]></summary>
+        <author>
+            <name>fartpig</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[windows中wampserver增加https支持]]></title>
         <id>https://t3573393.github.io/fartpig.github.io/blog/2018/03/03/blog-01.html</id>
