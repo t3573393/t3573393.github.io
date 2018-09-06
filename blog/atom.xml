@@ -2,12 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://t3573393.github.io/fartpig.github.io/blog</id>
     <title>fartpig‘s blog  Blog</title>
-    <updated>2018-08-12T06:00:00Z</updated>
+    <updated>2018-09-06T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://t3573393.github.io/fartpig.github.io/blog"/>
     <subtitle>The best place to stay up-to-date with the latest fartpig‘s blog  news and events.</subtitle>
     <logo>https://t3573393.github.io/fartpig.github.io/img/fartpig.jpeg</logo>
     <rights>Copyright © 2018 fartpig </rights>
+    <entry>
+        <title type="html"><![CDATA[AS400数据描述文件解析查询框架]]></title>
+        <id>https://t3573393.github.io/fartpig.github.io/blog/2018/09/06/blog-02.html</id>
+        <link href="https://t3573393.github.io/fartpig.github.io/blog/2018/09/06/blog-02.html">
+        </link>
+        <updated>2018-09-06T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>ddssrc2db 是一个基于Spring boot和 bootstrap框架的AS400源码解析和查询的应用程序，依赖于DDS源码文件和数据库。项目地址为<a href="https://github.com/t3573393/ddssrc2db">ddssrc2db</a>。</p>
+]]></summary>
+        <author>
+            <name>fartpig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[jenkins配置扫描脚本]]></title>
+        <id>https://t3573393.github.io/fartpig.github.io/blog/2018/09/06/blog-01.html</id>
+        <link href="https://t3573393.github.io/fartpig.github.io/blog/2018/09/06/blog-01.html">
+        </link>
+        <updated>2018-09-06T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>check_config.groovy 是一个基于groovy语言的jenkins的插件脚本，实现了基于xml、properties、ini格式文件的配置扫描。脚本地址为<a href="https://github.com/t3573393/devtool/blob/master/jenkins/check_config.groovy">check_config.groovy</a>。</p>
+]]></summary>
+        <author>
+            <name>fartpig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[WeeklyReport周报系统]]></title>
+        <id>https://t3573393.github.io/fartpig.github.io/blog/2018/08/20/blog-01.html</id>
+        <link href="https://t3573393.github.io/fartpig.github.io/blog/2018/08/20/blog-01.html">
+        </link>
+        <updated>2018-08-20T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>WeeklyReport是一个基于python语言的Flask 框架的周报系统。为了能够更好的满足部署和使用的需要，将项目进行改造。项目地址为<a href="https://github.com/t3573393/WeeklyReport">WeeklyReport</a>。</p>
+]]></summary>
+        <author>
+            <name>fartpig</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[itchat4j中的功能扩展]]></title>
         <id>https://t3573393.github.io/fartpig.github.io/blog/2018/08/12/blog-01.html</id>
