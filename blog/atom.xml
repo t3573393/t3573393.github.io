@@ -2,12 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://t3573393.github.io/fartpig.github.io/blog</id>
     <title>fartpig‘s blog  Blog</title>
-    <updated>2018-09-06T06:00:00Z</updated>
+    <updated>2019-02-13T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://t3573393.github.io/fartpig.github.io/blog"/>
     <subtitle>The best place to stay up-to-date with the latest fartpig‘s blog  news and events.</subtitle>
     <logo>https://t3573393.github.io/fartpig.github.io/img/fartpig.jpeg</logo>
-    <rights>Copyright © 2018 fartpig </rights>
+    <rights>Copyright © 2019 fartpig </rights>
+    <entry>
+        <title type="html"><![CDATA[mockrunner-httpserver模块]]></title>
+        <id>https://t3573393.github.io/fartpig.github.io/blog/2019/02/13/blog-01.html</id>
+        <link href="https://t3573393.github.io/fartpig.github.io/blog/2019/02/13/blog-01.html">
+        </link>
+        <updated>2019-02-13T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>mockrunner-httpserver 是一个基于mockrunner的原来项目，增加的一个httpserver的mock模块，提供了对http 服务器的模拟。项目地址为<a href="https://github.com/t3573393/mockrunner/tree/mockrunner-1.2.0">mockrunner</a>。</p>
+]]></summary>
+        <author>
+            <name>fartpig</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AS400数据描述文件解析查询框架]]></title>
         <id>https://t3573393.github.io/fartpig.github.io/blog/2018/09/06/blog-02.html</id>
