@@ -2,12 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://t3573393.github.io/fartpig.github.io/blog</id>
     <title>fartpig‘s blog  Blog</title>
-    <updated>2019-04-18T06:00:00Z</updated>
+    <updated>2019-05-12T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://t3573393.github.io/fartpig.github.io/blog"/>
     <subtitle>The best place to stay up-to-date with the latest fartpig‘s blog  news and events.</subtitle>
     <logo>https://t3573393.github.io/fartpig.github.io/img/fartpig.jpeg</logo>
     <rights>Copyright © 2019 fartpig </rights>
+    <entry>
+        <title type="html"><![CDATA[dbunit-extractor-web工具]]></title>
+        <id>https://t3573393.github.io/fartpig.github.io/blog/2019/05/12/blog-01.html</id>
+        <link href="https://t3573393.github.io/fartpig.github.io/blog/2019/05/12/blog-01.html">
+        </link>
+        <updated>2019-05-12T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>dbunit-extractor-web 是一个基于dbunit库作为数据导出的web管理工具。项目地址为<a href="https://github.com/t3573393/dbunit-extractor-web">dbunit-extractor-web</a>。</p>
+]]></summary>
+        <author>
+            <name>fartpig</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[pagination-sql 库]]></title>
         <id>https://t3573393.github.io/fartpig.github.io/blog/2019/04/18/blog-01.html</id>
