@@ -2,117 +2,117 @@
 <rss version="2.0">
     <channel>
         <title>fartpig‘s blog  Blog</title>
-        <link>https://t3573393.github.io/fartpig.github.io/blog</link>
+        <link>http://www.fartpig.org/blog</link>
         <description>The best place to stay up-to-date with the latest fartpig‘s blog  news and events.</description>
         <lastBuildDate>Sun, 12 May 2019 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
             <title>fartpig‘s blog  Blog</title>
-            <url>https://t3573393.github.io/fartpig.github.io/img/fartpig.jpeg</url>
-            <link>https://t3573393.github.io/fartpig.github.io/blog</link>
+            <url>http://www.fartpig.org/img/fartpig.jpeg</url>
+            <link>http://www.fartpig.org/blog</link>
         </image>
         <copyright>Copyright © 2019 fartpig </copyright>
         <item>
             <title><![CDATA[dbunit-extractor-web工具]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2019/05/12/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2019/05/12/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2019/05/12/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2019/05/12/blog-01.html</guid>
             <pubDate>Sun, 12 May 2019 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>dbunit-extractor-web 是一个基于dbunit库作为数据导出的web管理工具。项目地址为<a href="https://github.com/t3573393/dbunit-extractor-web">dbunit-extractor-web</a>。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[pagination-sql 库]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2019/04/18/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2019/04/18/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2019/04/18/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2019/04/18/blog-01.html</guid>
             <pubDate>Thu, 18 Apr 2019 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>pagination-sql 是一个基于hibernate-core中的dialet中的sql分页查询的实现。项目地址为<a href="https://github.com/t3573393/pagination-sql">pagination-sql</a>。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[mockrunner-httpserver模块]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2019/02/13/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2019/02/13/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2019/02/13/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2019/02/13/blog-01.html</guid>
             <pubDate>Wed, 13 Feb 2019 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>mockrunner-httpserver 是一个基于mockrunner的原来项目，增加的一个httpserver的mock模块，提供了对http 服务器的模拟。项目地址为<a href="https://github.com/t3573393/mockrunner/tree/mockrunner-1.2.0">mockrunner</a>。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[AS400数据描述文件解析查询框架]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2018/09/06/blog-02.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2018/09/06/blog-02.html</guid>
+            <link>http://www.fartpig.org/blog/2018/09/06/blog-02.html</link>
+            <guid>http://www.fartpig.org/blog/2018/09/06/blog-02.html</guid>
             <pubDate>Thu, 06 Sep 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>ddssrc2db 是一个基于Spring boot和 bootstrap框架的AS400源码解析和查询的应用程序，依赖于DDS源码文件和数据库。项目地址为<a href="https://github.com/t3573393/ddssrc2db">ddssrc2db</a>。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[jenkins配置扫描脚本]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2018/09/06/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2018/09/06/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2018/09/06/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2018/09/06/blog-01.html</guid>
             <pubDate>Thu, 06 Sep 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>check_config.groovy 是一个基于groovy语言的jenkins的插件脚本，实现了基于xml、properties、ini格式文件的配置扫描。脚本地址为<a href="https://github.com/t3573393/devtool/blob/master/jenkins/check_config.groovy">check_config.groovy</a>。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[WeeklyReport周报系统]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2018/08/20/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2018/08/20/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2018/08/20/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2018/08/20/blog-01.html</guid>
             <pubDate>Mon, 20 Aug 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>WeeklyReport是一个基于python语言的Flask 框架的周报系统。为了能够更好的满足部署和使用的需要，将项目进行改造。项目地址为<a href="https://github.com/t3573393/WeeklyReport">WeeklyReport</a>。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[itchat4j中的功能扩展]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2018/08/12/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2018/08/12/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2018/08/12/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2018/08/12/blog-01.html</guid>
             <pubDate>Sun, 12 Aug 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>itchat4j是一个基于java语言的微信机器人库，里面支持了对文字、语音、图片等信息的接收和回复，是对<a href="https://github.com/littlecodersh/ItChat">itchat库</a>的翻写。不过在使用的过程中对web支持不理想，本人基于原来的版本进行了相应的改造，见 <a href="https://github.com/t3573393/itchat4j">github itchat4j</a></p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[windows中wampserver增加https支持]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2018/03/03/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2018/03/03/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2018/03/03/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2018/03/03/blog-01.html</guid>
             <pubDate>Sat, 03 Mar 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>为了支持在windows中开发小程序，需要本地服务器支持https并且域名不能为localhost</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[maven重命名war插件下的jar名称]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/11/30/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/11/30/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2017/11/30/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2017/11/30/blog-01.html</guid>
             <pubDate>Thu, 30 Nov 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>在实际的maven构建war项目中，希望通过依赖引入的jar包名称可以定制，具体的为第三方的用完整名称(名称-版本-分类.扩展名)，而自己的项目打出来的jar希望使用短名称(名称.扩展名)。由于jar包的下载如果是通过dependency的方式引入，可以通过maven-dependency-plugin进行重命名。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[ant使用JDT 编译多种编码文件方案]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/11/21/blog-02.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/11/21/blog-02.html</guid>
+            <link>http://www.fartpig.org/blog/2017/11/21/blog-02.html</link>
+            <guid>http://www.fartpig.org/blog/2017/11/21/blog-02.html</guid>
             <pubDate>Tue, 21 Nov 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>在实际的java ant打包的项目中遇到多种编码并称的情况，导致使用一次具体的便宜不能将目标class输出。这个时候可以使用jdt插件(ecj)编译指定编码，通过具体执行某次编译的文件和编码从而最后将文件汇总，得到预期的效果。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[maven使用jdt编译器，并使用prefs文件进行描述]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/11/21/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/11/21/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2017/11/21/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2017/11/21/blog-01.html</guid>
             <pubDate>Tue, 21 Nov 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>在实际的项目中，往往有些场景需要使用eclipse编译的结果进行部署调试，为了能够使maven编译的结果和eclipse的导出结果一致，需要使用JDT编译器，同时为了能够让项目中的配置一样(源和目标的版本，调试信息等)，还需要将jdt的配置文件在maven中生效。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[maven使用antrun运行不同版本的插件]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/11/16/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/11/16/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2017/11/16/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2017/11/16/blog-01.html</guid>
             <pubDate>Thu, 16 Nov 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>在遗留的系统项目中由于采用比较旧的JDK1.5，导致很多比较新的插件和maven版本不能使用，针对这种情况，可以通过使用antrun插件来指定版本的JDK和maven来运行对应的插件。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[基于数据库的分布式消息队列]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/10/30/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/10/30/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2017/10/30/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2017/10/30/blog-01.html</guid>
             <pubDate>Mon, 30 Oct 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<h2><a class="anchor" aria-hidden="true" id="需求"></a><a href="#需求" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>需求：</h2>
 <p>在传统的应用中由于消息队列缺乏，而且为了兼容必要的部署和配置需求，往往想在不太多修改代码的情况下拥有队列功能。常用的消息队列有传统的JMS，amqp以及互联网的mq系列的中间件等。然而在传统的基于数据库的应用中，往往只想拥有简单的队列功能，并不存在着大量并发和分布式的问题，因此构建一个基于数据库表存储结构的队列已经基本能满足业务需求。该库的实现为jdjjob库</p>
@@ -120,16 +120,16 @@
         </item>
         <item>
             <title><![CDATA[websphere wsadminlib.py使用]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/10/11/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/10/11/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2017/10/11/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2017/10/11/blog-01.html</guid>
             <pubDate>Wed, 11 Oct 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>websphere部署中使用wasadmin.sh脚本，可以采用SOAP协议的jython脚本的方式进行部署调用。具体<a href="https://wiki.jenkins.io/download/attachments/14942211/wsadminlib.py">wsadminlib.py</a> 下载。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[fileEncodingChange工具简介]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/09/01/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/09/01/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2017/09/01/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2017/09/01/blog-01.html</guid>
             <pubDate>Fri, 01 Sep 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>在某些历史遗留项目中，由于开发人员的不规范操作，比如使用不同平台的文本编辑器以及各种无视编码的复制粘贴，导致整个项目里面编码鱼龙混杂，有些编码文件或许经过几手的复制之后，以及完全丢失了起追踪编码的可能。<br>
 在一般的情况下，都是通过外部的文本编辑工具进行强制编码转化并保存成新的文件的方式来保证编码一致的。<br>
@@ -138,24 +138,24 @@
         </item>
         <item>
             <title><![CDATA[lib2pom工具说明]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/08/23/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/08/23/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2017/08/23/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2017/08/23/blog-01.html</guid>
             <pubDate>Wed, 23 Aug 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>在现实的java项目中，有一些非maven管理的项目，需要进行改造，会导致其中jar包管理这块增加很多工作量，为了解决这个问题特意设计了lib2pom这个插件工具来转化和管理jar文件。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[基于ssh和wsadmin的远程websphere部署]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/08/18/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/08/18/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2017/08/18/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2017/08/18/blog-01.html</guid>
             <pubDate>Fri, 18 Aug 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>在jenkins的自动化部署过程中，由于一些实际的情况导致websphere deployment的插件不好用</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[jenkins中对was的部署支持]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/07/21/blog-02.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/07/21/blog-02.html</guid>
+            <link>http://www.fartpig.org/blog/2017/07/21/blog-02.html</link>
+            <guid>http://www.fartpig.org/blog/2017/07/21/blog-02.html</guid>
             <pubDate>Fri, 21 Jul 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>jenkins版本：  2.32.1<br>
 websphere 版本： 8.5<br>
@@ -164,32 +164,32 @@ websphere 版本： 8.5<br>
         </item>
         <item>
             <title><![CDATA[xcode远程编译打包签名问题]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/07/21/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/07/21/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2017/07/21/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2017/07/21/blog-01.html</guid>
             <pubDate>Fri, 21 Jul 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>当你使用ssh登录目标mac机器之后，在命令中使用 xcodebuild 命令打包，会导致 签名的时候失败。</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[jenkins+maven+archiva+gitlab自动工具实践]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2017/07/20/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2017/07/20/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2017/07/20/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2017/07/20/blog-01.html</guid>
             <pubDate>Thu, 20 Jul 2017 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>由于在工作中需要在内网的情况下，部署自动化打包部署环境，因此尝试在 redhat-el6.5 的机器上进行实践。对应的实践步骤如下：</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[cocos2d-x-2.2.3 环境部署问题小记]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2014/04/24/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2014/04/24/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2014/04/24/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2014/04/24/blog-01.html</guid>
             <pubDate>Thu, 24 Apr 2014 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>环境部署问题如下：</p>
 ]]></description>
         </item>
         <item>
             <title><![CDATA[获取泛型类中的实际类型]]></title>
-            <link>https://t3573393.github.io/fartpig.github.io/blog/2014/03/08/blog-01.html</link>
-            <guid>https://t3573393.github.io/fartpig.github.io/blog/2014/03/08/blog-01.html</guid>
+            <link>http://www.fartpig.org/blog/2014/03/08/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2014/03/08/blog-01.html</guid>
             <pubDate>Sat, 08 Mar 2014 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>java中获取泛型中的实际类型方法</p>
 ]]></description>
