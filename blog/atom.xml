@@ -2,12 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://www.fartpig.org/blog</id>
     <title>fartpig‘s blog  Blog</title>
-    <updated>2019-05-12T06:00:00Z</updated>
+    <updated>2020-03-21T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="http://www.fartpig.org/blog"/>
     <subtitle>The best place to stay up-to-date with the latest fartpig‘s blog  news and events.</subtitle>
     <logo>http://www.fartpig.org/img/fartpig.jpeg</logo>
-    <rights>Copyright © 2019 fartpig </rights>
+    <rights>Copyright © 2020 fartpig </rights>
+    <entry>
+        <title type="html"><![CDATA[jdbc数据库操作经验汇总]]></title>
+        <id>http://www.fartpig.org/blog/2020/03/21/blog-01.html</id>
+        <link href="http://www.fartpig.org/blog/2020/03/21/blog-01.html">
+        </link>
+        <updated>2020-03-21T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>使用较多年的Jdbc的数据库操作API，可能都觉得比较简单，这里总结一点历史上遇到的问题。</p>
+]]></summary>
+        <author>
+            <name>fartpig</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[dbunit-extractor-web工具]]></title>
         <id>http://www.fartpig.org/blog/2019/05/12/blog-01.html</id>

@@ -4,7 +4,7 @@
         <title>fartpig‘s blog  Blog</title>
         <link>http://www.fartpig.org/blog</link>
         <description>The best place to stay up-to-date with the latest fartpig‘s blog  news and events.</description>
-        <lastBuildDate>Sun, 12 May 2019 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Mar 2020 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -12,7 +12,15 @@
             <url>http://www.fartpig.org/img/fartpig.jpeg</url>
             <link>http://www.fartpig.org/blog</link>
         </image>
-        <copyright>Copyright © 2019 fartpig </copyright>
+        <copyright>Copyright © 2020 fartpig </copyright>
+        <item>
+            <title><![CDATA[jdbc数据库操作经验汇总]]></title>
+            <link>http://www.fartpig.org/blog/2020/03/21/blog-01.html</link>
+            <guid>http://www.fartpig.org/blog/2020/03/21/blog-01.html</guid>
+            <pubDate>Sat, 21 Mar 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>使用较多年的Jdbc的数据库操作API，可能都觉得比较简单，这里总结一点历史上遇到的问题。</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[dbunit-extractor-web工具]]></title>
             <link>http://www.fartpig.org/blog/2019/05/12/blog-01.html</link>

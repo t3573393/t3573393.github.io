@@ -3,6 +3,7 @@
 <url> <loc>http://www.fartpig.org/help.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="http://www.fartpig.org/en/help.html" /> </url>
 <url> <loc>http://www.fartpig.org/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="http://www.fartpig.org/en/index.html" /> </url>
 <url> <loc>http://www.fartpig.org/users.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="http://www.fartpig.org/en/users.html" /> </url>
+<url> <loc>http://www.fartpig.org/blog/2020/03/21/blog-01.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://www.fartpig.org/blog/2019/05/12/blog-01.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://www.fartpig.org/blog/2019/04/18/blog-01.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://www.fartpig.org/blog/2019/02/13/blog-01.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
